@@ -59,12 +59,12 @@ em {
 
 .container {
   display: inline-block;
-  width: 65vw;
+  width: 810px;
   position: relative;
 }
 
 .container.wide {
-  width: 80vw;
+  width: 1050px;
 }
 
 .container.right {
@@ -229,6 +229,10 @@ em {
   text-align: center;
 }
 
+.section.i-am-engineer.mobile {
+  display: none;
+}
+
 .mobile .main-container {
   display: block;
 }
@@ -253,7 +257,7 @@ em {
   font-size: 2.3vw;
   letter-spacing: 0.3vw;
   position: relative;
-  top: -4vh;
+  top: -3vh;
   color: #f68b91;
 }
 
@@ -264,15 +268,20 @@ em {
     font-size: 4vw;
     letter-spacing: 1vw;
   }
+  .container {
+    width: 65vw;
+  }
+  .container.wide {
+    width: 80vw;
+  }
   .section {
-    padding: 40vh 0;
+    padding: 45vh 0;
   }
   .section.first {
     display: none;
   }
   .section.first.mobile {
     display: block;
-    height: auto;
   }
   .section.i-am-engineer {
     display: none;
