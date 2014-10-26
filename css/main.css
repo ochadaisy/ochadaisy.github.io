@@ -1,3 +1,5 @@
+/** 1. Base Styles **/
+
 body {
   color: #bbb;
   background: #fff;
@@ -57,12 +59,12 @@ em {
 
 .container {
   display: inline-block;
-  width: 810px;
+  width: 65vw;
   position: relative;
 }
 
 .container.wide {
-  width: 1050px;
+  width: 80vw;
 }
 
 .container.right {
@@ -218,4 +220,68 @@ em {
   width: 12vw;
   font-size: 1vw;
   letter-spacing: 0.07vw;
+}
+
+/** 2. Mobile Styles **/
+
+.section.first.mobile {
+  display: none;
+  text-align: center;
+}
+
+.mobile .main-container {
+  display: block;
+}
+
+.mobile .me {
+  display: block;
+  opacity: 1;
+  position: static;
+  margin: 0 auto;
+  padding-top: 10vh;
+  height: 50vh;
+}
+
+.mobile .name {
+  font-size: 16vw;
+  font-weight: 700;
+  letter-spacing: 1vw;
+  text-shadow: none;
+}
+
+.mobile .design {
+  font-size: 2.3vw;
+  letter-spacing: 0.3vw;
+  position: relative;
+  top: -4vh;
+  color: #f68b91;
+}
+
+/** 3. Media Queries **/
+
+@media screen and (max-width: 1250px) {
+  body {
+    font-size: 4vw;
+    letter-spacing: 1vw;
+  }
+  .section {
+    padding: 40vh 0;
+  }
+  .section.first {
+    display: none;
+  }
+  .section.first.mobile {
+    display: block;
+    height: auto;
+  }
+  .section.i-am-engineer {
+    display: none;
+  }
+  .section.i-am-engineer.mobile {
+    display: block;
+  }
+  .google {
+    font-size: 9vw;
+    letter-spacing: -1vw;
+  }
 }
