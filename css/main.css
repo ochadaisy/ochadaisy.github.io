@@ -133,11 +133,21 @@ em {
   padding-left: 88px;
 }
 
-.heart {
+.heart-container {
+  position: relative;
   display: inline-block;
+  height: 30px;
+  width: 80px;
+  text-align: center;
+}
+
+.heart {
   position: absolute;
+  top: -70%;
+  width: 100%;
   font-family: Georgia;
   font-size: 90px;
+  line-height: 90px;
   color: #ef545d;
 }
 
